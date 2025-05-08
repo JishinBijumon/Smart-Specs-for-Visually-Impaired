@@ -1,0 +1,28 @@
+#include <SoftwareSerial.h>
+#include <DFRobotDFPlayerMini.h>
+
+SoftwareSerial mySerial(1, 3); // RX, TX
+DFRobotDFPlayerMini myDFPlayer;
+
+void setup() {
+  Serial.begin(115200);
+  mySerial.begin(9600);
+  
+  if (!myDFPlayer.begin(mySerial)) {
+    Serial.println("Unable to begin DFPlayer Mini");
+    while (true);
+  }
+
+  myDFPlayer.volume(25);  // Set volume (0~30)
+}
+
+void loop() {
+  // Assuming object "person" is detected:
+  String detectedObject = "person";
+  
+  if (detectedObject == "person") {
+    myDFPlayer.play(1); // Plays 0001.mp3 from SD card
+  }
+  
+  delay(5000); // Prevent repeating too fast
+}
