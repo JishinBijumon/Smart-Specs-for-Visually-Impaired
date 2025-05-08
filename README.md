@@ -39,5 +39,21 @@ This is a wearable device built using the ESP32-CAM to assist visually impaired 
 2. A custom-trained model detects objects in real-time.
 3. The detected object's name is sent to an amplifier and played through a speaker.
 
+## 📈 Future Enhancements:
+
+Raspberry Pi Integration for enhancing processing power, enabling real-time object detection, facial recognition, and OCR-based text reading.
+
+Integration with ultrasonic or LiDAR sensors for depth perception.
+
+Uses YOLO, Edge Impulse, and cloud-based AI for better accuracy and real-time scene understanding.
+
+Bluetooth connectivity for real-time updates via smartphone.
+
+Onboard AI for enhanced scene understanding and environment description.
+
+Converts Braille text into speech using OCR and multilanguage text-to-speech(TTS).
+
+GPS Navigation for providing voice-guided directions, obstacle alerts, and emergency SOS features for out-door mobility
+
 ## 🙏 Acknowledgements
 Special thanks to our guide Prof.Agi George and Ms. Therese Yamuna Mahesh for constant support and technical mentorship throughout this project.
